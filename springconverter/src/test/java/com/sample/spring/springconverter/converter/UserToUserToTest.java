@@ -25,7 +25,6 @@ public class UserToUserToTest {
 
         Optional<UserTo> converted = userToUserToConverter.convert(user);
 
-
         BDDAssertions.then(converted).isEqualTo(expectedOptionalUserTO);
         BDDAssertions.then(converted.get()).isEqualTo(expectedOptionalUserTO.get());
         BDDAssertions.then(converted.get().getIdade()).isEqualTo(30);
